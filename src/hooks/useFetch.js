@@ -11,7 +11,7 @@ export function useFetch(url, params) {
       try {
         setLoading(true);
         setError("");
-        const res = await fetch(url, params, { signal: controller.signal });
+        const res = await fetch(url, { signal: controller.signal });
 
         if (!res.ok) throw new Error("Something Went Wrong 🔥");
 
