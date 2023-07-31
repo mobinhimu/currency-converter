@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.65%;
+}
+
+body {
+  font-family: "Roboto", "sans-sarif";
+  background-color: #675aff;
+}
+
+.container {
+  max-width: 100%;
+  margin: 100px auto;
+}
+.converter-box {
+  background-color: #fff;
+  padding: 24px;
+  border-radius: 6px;
+}
+
+.header {
+  font-size: 2rem;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 14px;
+}
+label {
+  display: inline-block;
+  font-size: 1.4rem;
+  padding-bottom: 8px;
+}
+.input {
+  display: inline-block;
+  width: 100%;
+  padding: 8px;
+  outline: none;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition-duration: 0.2s;
+}
+.input:focus {
+  box-shadow: 0 10px 30px 0 #dddddd5e;
+  margin-top: -2px;
+}
+.from-to {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+.from-to span {
+  font-size: 1.6rem;
+  padding-bottom: 8px;
+}
+
+.options {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+  justify-content: space-between;
+}
+.icon {
+  height: 24px;
+  cursor: pointer;
+}
+.exchange {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.exchange span {
+  font-size: 1.6rem;
+  padding-left: 10px;
+}
+select {
+  padding: 10px;
+  border-radius: 50px;
+  border: 2px solid #675aff;
+}
+option {
+  border: 2px solid #675aff;
+  padding-bottom: 4px;
+}
+.money {
+  font-size: 1.8rem;
+  margin-top: 22px;
+}
+
+.button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #fff;
+  background-color: #675aff;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 40px;
+}
+.button:hover {
+  background-color: #685afff1;
+}
+.message {
+  text-align: center;
+  padding: 2.5rem 0;
+  letter-spacing: 1.4px;
+  font-size: 1.4rem;
+}
+.message strong {
+  color: #675aff;
+}
+@media screen and (min-width: 576px) {
+  .container {
+    max-width: 540px;
+    margin: 0 auto;
+  }
+  select {
+    width: 150px;
+  }
+}
